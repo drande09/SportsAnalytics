@@ -1,0 +1,22 @@
+Variable Name,Meaning
+GAME_ID,Unique ID for each game
+MATCHUP,"Date, team, opponent, and location"
+LOCATION,"A for Away, H for Home"
+W,"W if team won, L if team Lost"
+FINAL_MARGIN,"Final scoring margin + is win, - is loss"
+SHOT_NUMBER,Number of shots (including this one) taken by the shooter so far this game
+PERIOD,"Quarter, 5 = OT1, etc. "
+GAME_CLOCK,Time left in the quarter
+SHOT_CLOCK,Seconds left on the shot clock when the shot was taken
+DRIBBLES,Number of dribbles before shooting
+TOUCH_TIME,Time in possession of the ball before shooting
+SHOT_DIST,Distance from hoop when shooting
+PTS_TYPE,2 or 3 point shot
+SHOT_RESULT,made or missed
+CLOSEST_DEFENDER,Name of closest player defending the shot
+CLOSEST_DEFENDER_PLAYER_ID,Unique ID of closest player
+CLOSE_DEF_DIST,How far the closest defender was from the shooter when the shot was taken
+FGM,"1 for a make, 0 for a miss"
+PTS,"Points scored on the shot (0,2,3)"
+player_name,Player taking the shot
+player_id,Unique ID of shooter
