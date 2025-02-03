@@ -110,8 +110,8 @@ column_number,column_name,description
 109,pitchData.coordinates.aZ,Acceleration coordinate aZ for the pitch
 110,pitchData.coordinates.pfxX,PFX X coordinate (movement) for the pitch
 111,pitchData.coordinates.pfxZ,PFX Z coordinate (movement) for the pitch
-112,pitchData.coordinates.pX,Pitch X coordinate (release point)
-113,pitchData.coordinates.pZ,Pitch Z coordinate (release point)
+112,pitchData.coordinates.pX,Pitch X coordinate (at plate)
+113,pitchData.coordinates.pZ,Pitch Z coordinate (at plate)
 114,pitchData.coordinates.vX0,X component of pitch velocity at release
 115,pitchData.coordinates.vY0,Y component of pitch velocity at release
 116,pitchData.coordinates.vZ0,Z component of pitch velocity at release
