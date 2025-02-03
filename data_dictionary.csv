@@ -1,0 +1,165 @@
+column_number,column_name,description
+1,game_pk,Unique game identifier
+2,game_date,Date when the game was played
+3,index,Record index number
+4,startTime,Start time of the pitch or play
+5,endTime,End time of the pitch or play
+6,isPitch,Indicator if the record represents a pitch (TRUE/FALSE)
+7,type,General type of play or event
+8,playId,Unique identifier for the play
+9,pitchNumber,Sequential pitch number within the at-bat
+10,details.description,Text description of the play details
+11,details.event,"Event name (e.g., single, strikeout)"
+12,details.awayScore,Away team score at time of event
+13,details.homeScore,Home team score at time of event
+14,details.isScoringPlay,Indicator if the play was a scoring play
+15,details.hasReview,Indicator if a review was used on the play
+16,details.code,Code representing the play outcome
+17,details.ballColor,Color of the ball as captured (for visualization purposes)
+18,details.isInPlay,Indicator if the ball was put into play
+19,details.isStrike,Indicator if the pitch was called a strike
+20,details.isBall,Indicator if the pitch was called a ball
+21,details.call.code,Code representing the umpire's call
+22,details.call.description,Text description of the umpire's call
+23,count.balls.start,Ball count at the start of the pitch
+24,count.strikes.start,Strike count at the start of the pitch
+25,count.outs.start,Out count at the start of the pitch
+26,player.id,Player identifier (usually batter)
+27,player.link,URL or link to the player's info
+28,pitchData.strikeZoneTop,Top boundary of the strike zone
+29,pitchData.strikeZoneBottom,Bottom boundary of the strike zone
+30,details.fromCatcher,Indicator if the pitch signal came from the catcher
+31,pitchData.coordinates.x,X coordinate for the pitch location
+32,pitchData.coordinates.y,Y coordinate for the pitch location
+33,hitData.trajectory,Inferred trajectory of the batted ball
+34,hitData.hardness,Hardness rating of the batted ball
+35,hitData.location,General location where the ball was hit
+36,hitData.coordinates.coordX,X coordinate for the hit location
+37,hitData.coordinates.coordY,Y coordinate for the hit location
+38,actionPlayId,Unique identifier for the action play
+39,details.eventType,Specific event type details
+40,details.runnerGoing,"Indicator regarding runner movement (e.g., if a runner advanced)"
+41,position.code,Code for the player's defensive position
+42,position.name,Name of the defensive position
+43,position.type,Type/category of the defensive position
+44,position.abbreviation,"Abbreviated position (e.g., SS, CF)"
+45,battingOrder,Batting order position
+46,atBatIndex,Index of the at-bat in the game
+47,result.type,"Type of result (e.g., hit, out)"
+48,result.event,Brief result description
+49,result.eventType,Categorical event type for the result
+50,result.description,Detailed description of the result
+51,result.rbi,Number of runs batted in (RBI)
+52,result.awayScore,Away team score after the play
+53,result.homeScore,Home team score after the play
+54,about.atBatIndex,At-bat index from the game summary
+55,about.halfInning,Indicator for top or bottom half of the inning
+56,about.inning,Inning number
+57,about.startTime,Start time of the at-bat
+58,about.endTime,End time of the at-bat
+59,about.isComplete,Indicator if the at-bat is complete
+60,about.isScoringPlay,Indicator if the at-bat resulted in a scoring play
+61,about.hasReview,Indicator if the at-bat had a review
+62,about.hasOut,Indicator if the at-bat resulted in an out
+63,about.captivatingIndex,A metric that may capture play excitement
+64,count.balls.end,Ball count at the end of the pitch
+65,count.strikes.end,Strike count at the end of the pitch
+66,count.outs.end,Out count at the end of the pitch
+67,matchup.batter.id,Identifier for the batter in the matchup
+68,matchup.batter.fullName,Full name of the batter
+69,matchup.batter.link,Link to the batter's details
+70,matchup.batSide.code,Code indicating batter's handedness (L/R)
+71,matchup.batSide.description,Description of batter's side (left/right)
+72,matchup.pitcher.id,Identifier for the pitcher in the matchup
+73,matchup.pitcher.fullName,Full name of the pitcher
+74,matchup.pitcher.link,Link to the pitcher's details
+75,matchup.pitchHand.code,Code indicating the pitcher's throwing hand
+76,matchup.pitchHand.description,Description of the pitcher's hand (left/right)
+77,matchup.splits.batter,Performance splits for the batter
+78,matchup.splits.pitcher,Performance splits for the pitcher
+79,matchup.splits.menOnBase,Performance splits when there are men on base
+80,batted.ball.result,"Result of the batted ball (e.g., fly ball, ground ball)"
+81,home_team,Name of the home team
+82,home_level_id,Identifier for the home team’s level
+83,home_level_name,Name of the home team’s level
+84,home_parentOrg_id,Identifier for the home parent organization
+85,home_parentOrg_name,Name of the home parent organization
+86,home_league_id,Identifier for the home league
+87,home_league_name,Name of the home league
+88,away_team,Name of the away team
+89,away_level_id,Identifier for the away team’s level
+90,away_level_name,Name of the away team’s level
+91,away_parentOrg_id,Identifier for the away parent organization
+92,away_parentOrg_name,Name of the away parent organization
+93,away_league_id,Identifier for the away league
+94,away_league_name,Name of the away league
+95,batting_team,Team at bat
+96,fielding_team,Team in the field
+97,last.pitch.of.ab,Indicator if this was the last pitch of the at-bat
+98,pfxId,PITCHf/x identifier for the pitch
+99,details.trailColor,Color used for visualizing the pitch trail
+100,details.type.code,Code for the type of pitch
+101,details.type.description,Text description of the pitch type
+102,pitchData.startSpeed,Pitch speed at release (mph)
+103,pitchData.endSpeed,Pitch speed as it reaches the plate (mph)
+104,pitchData.zone,Categorized zone of the pitch
+105,pitchData.typeConfidence,Confidence score for pitch type identification
+106,pitchData.plateTime,Time from release to plate (seconds)
+107,pitchData.extension,Extension of the pitcher's delivery (feet)
+108,pitchData.coordinates.aY,Acceleration coordinate aY for the pitch
+109,pitchData.coordinates.aZ,Acceleration coordinate aZ for the pitch
+110,pitchData.coordinates.pfxX,PFX X coordinate (movement) for the pitch
+111,pitchData.coordinates.pfxZ,PFX Z coordinate (movement) for the pitch
+112,pitchData.coordinates.pX,Pitch X coordinate (release point)
+113,pitchData.coordinates.pZ,Pitch Z coordinate (release point)
+114,pitchData.coordinates.vX0,X component of pitch velocity at release
+115,pitchData.coordinates.vY0,Y component of pitch velocity at release
+116,pitchData.coordinates.vZ0,Z component of pitch velocity at release
+117,pitchData.coordinates.x0,X coordinate of the pitcher’s release point
+118,pitchData.coordinates.y0,Y coordinate of the pitcher’s release point
+119,pitchData.coordinates.z0,Z coordinate of the pitcher’s release point
+120,pitchData.coordinates.aX,Acceleration coordinate aX for the pitch
+121,pitchData.breaks.breakAngle,Angle of the pitch’s break
+122,pitchData.breaks.breakLength,Length of the pitch’s break
+123,pitchData.breaks.breakY,Vertical component of the pitch break
+124,pitchData.breaks.spinRate,Spin rate of the pitch (RPM)
+125,pitchData.breaks.spinDirection,Spin direction of the pitch
+126,hitData.launchSpeed,Exit velocity of the batted ball
+127,hitData.launchAngle,Launch angle of the batted ball
+128,hitData.totalDistance,Total distance traveled by the batted ball
+129,injuryType,Type of injury if one occurred
+130,umpire.id,Identifier for the umpire
+131,umpire.link,Link to the umpire's details
+132,details.isOut,Indicator if the play resulted in an out
+133,pitchData.breaks.breakVertical,Measured vertical break of the pitch
+134,pitchData.breaks.breakVerticalInduced,Induced vertical break of the pitch
+135,pitchData.breaks.breakHorizontal,Horizontal break of the pitch
+136,isBaseRunningPlay,Indicator if the play involves base running
+137,details.disengagementNum,Disengagement number (timing/pitch sequence detail)
+138,isSubstitution,Indicator if a substitution occurred
+139,replacedPlayer.id,Identifier for the replaced player
+140,replacedPlayer.link,Link to the replaced player's details
+141,result.isOut,Indicator if the result was an out
+142,about.isTopInning,Indicator if the inning is the top half
+143,matchup.postOnFirst.id,Identifier for the player on first base
+144,matchup.postOnFirst.fullName,Full name of the player on first base
+145,matchup.postOnFirst.link,Link to details for the player on first base
+146,matchup.postOnSecond.id,Identifier for the player on second base
+147,matchup.postOnSecond.fullName,Full name of the player on second base
+148,matchup.postOnSecond.link,Link to details for the player on second base
+149,matchup.postOnThird.id,Identifier for the player on third base
+150,matchup.postOnThird.fullName,Full name of the player on third base
+151,matchup.postOnThird.link,Link to details for the player on third base
+152,reviewDetails.isOverturned,Indicator if the review overturned the call
+153,reviewDetails.inProgress,Indicator if a review is in progress
+154,reviewDetails.reviewType,"Type of review (e.g., challenge)"
+155,reviewDetails.challengeTeamId,Identifier for the team that challenged the call
+156,details.violation.type,Type of rule violation (if any)
+157,details.violation.description,Description of the rule violation
+158,details.violation.player.id,Identifier for the player involved in a violation
+159,details.violation.player.fullName,Full name of the player involved in a violation
+160,base,"Base relevant to the play (e.g., first, second)"
+161,reviewDetails.isOverturned,Indicator if the review overturned the call (duplicate)
+162,reviewDetails.inProgress,Indicator if a review is in progress (duplicate)
+163,reviewDetails.reviewType,Type of review (duplicate)
+164,reviewDetails.challengeTeamId,Identifier for the challenging team (duplicate)
